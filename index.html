@@ -1,60 +1,44 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <title>Blue-Blazed Trail Running Series</title>
-</head>
-<body>
+---
+layout: default
+---
 
 <div class="container">
-<ul class="nav nav-pills justify-content-center mt-1 mb-3">
-    <li class="nav-item">
-        <a class="nav-link active" href="index.html">Home</a>
-    </li>
-</ul>
 
-    <div class="row">
-        <div class="col-8 col-sm-12 order-2 order-sm-1">
-            <h1>Blue-Blazed Trail Running Series</h1>
-        </div>
-        <div class="col-2 col-lg-1 order-1 order-sm-2">
-            <img src="images/blueblazedlogo.jpg">
-        </div>
-        <div class="col-12 col-sm-10 col-lg-7 order-3">
-            <p>A trail running series on Connecticut's Blue-Blazed Hiking Trails</p>
-            <h2 class="h5">What is the Blue-Blazed Trail Running Series?</h2>
-            <p>The Blue-Blazed Trail Running Series is a sequence of races in Connecticut that are run entirely or in part on the Blue-Blazed Hiking Trails (BBHT).  The BBHT are maintained by the Connecticut Forest & Park Association (CFPA). The goals of the series are:</p>
-            <ul>
-                <li>To promote and create greater awareness of trail running on the BBHT System</li>
-                <li>Attract more runners to Connecticut trail running races</li>
-                <li>Strengthen the running community</li>
-                <li>Raise awareness for CFPA's trail maintenance efforts</li>
-                <li>Enhance the experience for the runners who already support our races through series points and recognition</li>
-                <li>Oh…and to have fun running in the woods!</li>
-            </ul>
-            <p>Register at each race in which you participate and they will give the results to CFPA for posting.</p>
-        </div>
-        <div class="col-12 col-lg-4 order-4">
-            <h2>Upcoming Races</h2>
-                <ul id="upcomingraces">
-                    <li><a href="https://www.traprock50.com/" target="_blank">Traprock Trail Races</a> - 4/13/2019</li>
-                    <li><a href="http://shenipsitstriders.org/club-races/soapstone-mountain-trail-races.html" target="_blank">Soapstone Mountain Trail Races</a> - 5/19/2019</li>
-                    <li><a href="https://www.friendsofgoodwinforest.org/" target="_blank">Goodwin Forest Trail Runs</a> - 6/2/2019</li>
-                    <li><a href="http://shenipsitstriders.org/club-races/nipmuck-south-trail-race.html" target="_blank">Nipmuck South Trail Race</a> - 6/9/2019</li>
-                    <li><a href="http://www.hartfordmarathon.com/summer-solstice-trail-run" target="_blank">HMF Summer Solstice Trail Run</a> - 6/16/2019</li>
-                    <li><a href="http://shenipsitstriders.org/club-races/soapstone-assault.html" target="_blank">Soapstone Assault</a> - 7/28/2019</li>
-                    <li><a href="https://tunxisultra.wordpress.com/" target="_blank">Tunxis Trail Ultramarathon</a> - 9/7/2019</li>
-                    <li><a href="https://www.steependurance.com/macedonia-trail-race.html" target="_blank">Macedonia Trail Race</a> - 9/15/2019</li>
-                    <li><a href="http://shenipsitstriders.org/club-races/nipmuck-trail-marathon.html" target="_blank">NipMuck Trail Marathon</a> - 10/6/2019</li>
-                </ul>
-        </div>
-    </div>
+<div class="row">
+  <div class="col-8 col-sm-12 order-2 order-sm-1">
+    <h1>{{ site.title }}</h1>
+  </div>
+  <div class="col-2 col-lg-1 order-1 order-sm-2" style="z-index: -1;">
+    <img src="{{site.baseurl}}{% link images/blueblazedlogo.jpg %}" alt="Blue-Blazed Trail Logo">
+  </div>
+  <div class="col-12 col-sm-10 col-lg-7 order-3">
+    <p>{{ site.description }}</p>
+    <h2 class="h5">What is the Blue-Blazed Trail Running Series?</h2>
+      <p>The Blue-Blazed Trail Running Series is a sequence of races in Connecticut that are run entirely or in part on the Blue-Blazed Hiking Trails (BBHT).  The BBHT are maintained by the Connecticut Forest & Park Association (CFPA). The goals of the series are:</p>
+      <ul>
+        <li>To promote and create greater awareness of trail running on the BBHT System</li>
+        <li>Attract more runners to Connecticut trail running races</li>
+        <li>Strengthen the running community</li>
+        <li>Raise awareness for CFPA's trail maintenance efforts</li>
+        <li>Enhance the experience for the runners who already support our races through series points and recognition</li>
+        <li>Oh…and to have fun running in the woods!</li>
+      </ul>
+      <p>Register at each race in which you participate and they will give the results to CFPA for posting.</p>
+  </div>
+  <div class="col-12 col-lg-4 order-4">
+    <h2>Upcoming Races</h2>
+      <ul id="upcomingraces">
+        <li><a href="https://www.traprock50.com/" target="_blank">Traprock Trail Races</a> - 4/13/2019</li>
+        <li><a href="http://shenipsitstriders.org/club-races/soapstone-mountain-trail-races.html" target="_blank">Soapstone Mountain Trail Races</a> - 5/19/2019</li>
+        <li><a href="https://www.friendsofgoodwinforest.org/" target="_blank">Goodwin Forest Trail Runs</a> - 6/2/2019</li>
+        <li><a href="http://shenipsitstriders.org/club-races/nipmuck-south-trail-race.html" target="_blank">Nipmuck South Trail Race</a> - 6/9/2019</li>
+        <li><a href="http://www.hartfordmarathon.com/summer-solstice-trail-run" target="_blank">HMF Summer Solstice Trail Run</a> - 6/16/2019</li>
+        <li><a href="http://shenipsitstriders.org/club-races/soapstone-assault.html" target="_blank">Soapstone Assault</a> - 7/28/2019</li>
+        <li><a href="https://tunxisultra.wordpress.com/" target="_blank">Tunxis Trail Ultramarathon</a> - 9/7/2019</li>
+        <li><a href="https://www.steependurance.com/macedonia-trail-race.html" target="_blank">Macedonia Trail Race</a> - 9/15/2019</li>
+        <li><a href="http://shenipsitstriders.org/club-races/nipmuck-trail-marathon.html" target="_blank">NipMuck Trail Marathon</a> - 10/6/2019</li>
+      </ul>
+  </div>
 </div>
 
-<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
-<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script></body>
-</html>
+</div>
