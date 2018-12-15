@@ -1,0 +1,23 @@
+title: Blue-Blazed Trail Running Series
+description: A trail running series on Connecticut's Blue-Blazed Hiking Trails
+baseurl: ""
+url: https://blueblazedtrailrunningseries.org/
+timezone: America/New_York
+markdown:  kramdown
+exclude:   
+  - README.md
+  - .git
+  - .gitignore
+  - .gitattributes  
+  - .jekyll-cache
+  - CNAME
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+plugins:
+  - jekyll-sitemap
+year: 2018
