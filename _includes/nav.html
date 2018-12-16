@@ -1,7 +1,10 @@
 <nav>
 <ul class="nav nav-pills justify-content-center mt-1 mb-3">
   <li class="nav-item">
-    <a class="nav-link active" href="{{site.baseurl}}{% link index.html %}">Home</a>
+    <a class="nav-link{% if page.url == "/" %} active{% endif %}" href="{{site.baseurl}}{% link index.html %}">Home</a>
+  </li>
+  <li class="nav-item">
+    <a class="nav-link{% if page.url contains "races" %} active{% endif %}" href="{{ site.baseurl }}/races/{{ site.year }}{% link index.html %}">Races</a>
   </li>
 </ul>
 </nav>

@@ -1,0 +1,7 @@
+{%- assign url_to_validate = include.url -%}
+{%- assign first_four = url_to_validate | slice: 0, 4 -%}
+{%- if first_four != "http" -%}
+http://{{ url_to_validate }}
+{%- else -%}
+{{ url_to_validate }}
+{%- endif -%}

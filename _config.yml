@@ -20,4 +20,8 @@ exclude:
   - vendor/ruby/
 plugins:
   - jekyll-sitemap
-year: 2018
+collections:
+  races:
+    layout: race
+    output: true
+year: 2019
