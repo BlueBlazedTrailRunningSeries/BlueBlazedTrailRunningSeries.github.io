@@ -1,0 +1,15 @@
+---
+title: Schedules by Year
+layout: default
+permalink: /races/index.html
+---
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+
+{%- assign sorted_races = site.races | sort:"value" | reverse -%}
+{% for year in sorted_races %}
+  <p class="h3"><a href="{{ site.baseurl }}{{ year.url }}">{{ year.title }}</a></p>
+{%- endfor %}
+        
+</div>
