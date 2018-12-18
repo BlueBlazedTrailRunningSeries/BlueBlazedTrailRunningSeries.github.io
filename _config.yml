@@ -4,6 +4,9 @@ baseurl: ""
 url: https://blueblazedtrailrunningseries.org
 webmaster_verifications:
   google: fYpDKFmxkqLqky-jk4rYDMKlxRmbAmQp9VjI9zx9x-s
+logo: /images/blueblazedlogo.jpg
+facebook:
+  publisher: https://www.facebook.com/BBTRAILRS/
 timezone: America/New_York
 markdown:  kramdown
 exclude:   
