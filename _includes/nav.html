@@ -1,13 +1,30 @@
+{%- capture enabled_pages -%}
+{%- for page in site.pages -%}
+{{ page.url }}|
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign enabled_pages_array = enabled_pages | split: "|" -%}
+
 <nav>
 <ul class="nav nav-pills justify-content-center mt-1 mb-3">
   <li class="nav-item">
     <a class="nav-link{% if page.url == "/" %} active{% endif %}" href="{{site.baseurl}}{% link index.html %}">Home</a>
   </li>
+
+  {%- for active_page in enabled_pages_array -%}
+  {% if active_page == "/races/index.html" %}
   <li class="nav-item">
     <a class="nav-link{% if page.url contains "races" %} active{% endif %}" href="{{ site.baseurl }}/races/{{ site.year }}{% link index.html %}">Races</a>
   </li>
+  {%- endif -%}
+  {%- endfor -%}
+
+  {%- for active_page in enabled_pages_array -%}
+  {% if active_page == "/about.html" %}
   <li class="nav-item">
     <a class="nav-link{% if page.url == "/about.html" %} active{% endif %}" href="{{ site.baseurl }}{% link about.html %}">About</a>
   </li>
+  {%- endif -%}
+  {% endfor %}
 </ul>
 </nav>

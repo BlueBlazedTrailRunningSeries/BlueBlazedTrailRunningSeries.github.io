@@ -1,0 +1,6 @@
+- network: Facebook
+  url: https://www.facebook.com/BBTRAILRS/
+  font-awesome: fa-facebook
+- network: Instagram
+  url: https://www.instagram.com/blue_blazed_trail_series/
+  font-awesome: fa-instagram

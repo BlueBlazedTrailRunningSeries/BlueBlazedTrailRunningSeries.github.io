@@ -1,0 +1,28 @@
+{%- capture enabled_pages -%}
+{%- for page in site.pages -%}
+{{ page.url }}|
+{%- endfor -%}
+{%- endcapture -%}
+{%- assign enabled_pages_array = enabled_pages | split: "|" -%}
+
+<footer class="footer bg-light mt-auto py-3">
+  <div class="container d-flex justify-content-around flex-row">
+    <div>
+      <h2 class="h6">Social Media</h2>
+      <ul class="pl-0" style="list-style: none;">
+        {% for site in site.data.social_media %}
+        <li><a href="{{ site.url }}" target="_blank">{{ site.network }}</a></li>
+        {%- endfor -%}
+      </ul>
+    </div>
+    {%- for active_page in enabled_pages_array -%}
+    {% if active_page == "/privacy.html" %}
+    <div>
+      <h2 class="h6">
+        <a href="{{ site.baseurl }}{% link privacy.html %}">Privacy</a>
+      </h2>
+    </div>
+    {%- endif -%}
+    {%- endfor -%}
+  </div>
+</footer>
