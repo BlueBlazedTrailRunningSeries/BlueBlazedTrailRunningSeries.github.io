@@ -1,0 +1,1 @@
+{"year":"{{ page.year }}","last_updated":"{{ site.time | date_to_xmlschema }}","races":[{% include racedistances.txt %}]}

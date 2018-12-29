@@ -29,4 +29,6 @@ collections:
   races:
     layout: race
     output: true
+  api:
+    output: true
 year: 2019
