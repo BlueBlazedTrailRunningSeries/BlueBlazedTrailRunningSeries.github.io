@@ -1,0 +1,10 @@
+{%- assign date_to_validate = include.date -%}
+
+{%- capture hour -%}
+    {{ date_to_validate | date: "%H" }}
+{%- endcapture -%}
+
+{{ date_to_validate | date: "%F" }}
+    {%- if hour != "00" -%}
+        {{ date_to_validate | date: "T%T%z" }}
+    {%- endif -%}

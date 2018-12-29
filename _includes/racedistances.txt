@@ -2,17 +2,10 @@
     {{ page.year }}
 {%- endcapture -%}
 
-{% for race in site.data.races[raceyear] %}  
-    {%- capture hour -%}
-        {{ race.date | date: "%H" }}
-    {%- endcapture -%}
+{% for race in site.data.races[raceyear] %}
 
     {%- assign distances = race.distance | split: "/" -%}
-{"date":"{{ race.date | date: "%F" }}
-    {%- if hour != "00" -%}
-        {{ race.date | date: "T%T%z" }}
-    {%- endif -%}
-","race":"{{ race.race }}","distance":[
+{"date":"{%- include date_to_8601.txt date = race.date -%}","race":"{{ race.race }}","distance":[
     {%- for distance in distances -%}
         "{{distance}}"
 

@@ -3,8 +3,8 @@
 {%- endcapture -%}
 
 <ul id="upcomingraces" class="pl-2" style="list-style: none;">
-{% for race in site.data.races[currentyear] %}
-  <li><a href="{%- include website.txt url = race.website -%}" target="_blank">{{ race.race }}</a> - <time datetime="{{ race.date | date: %F }}">{{ race.date | date: "%b %e" }}</time></li>
-{% endfor %}
+{%- for race in site.data.races[currentyear] %}
+  <li><a href="{%- include website.txt url = race.website -%}" target="_blank">{{ race.race }}</a> - <time datetime="{%- include date_to_8601.txt date = race.date -%}">{{ race.date | date: "%b %e" }}</time></li>
+{%- endfor %}
   <li><a href="{{ site.baseurl }}/races/{{ site.year }}{% link index.html %}">{{ site.year }} Races…</a></li>
 </ul>
