@@ -9,7 +9,13 @@
     </thead>
     <tbody>
     {% for race in site.data.races[raceyear] %}
-      <tr><td><time datetime="{{ race.date | date: %F }}">{{ race.date | date: "%b %e, %Y" }}</time></td><td><a href="{%- include website.txt url = race.website -%}" target="_blank">{{ race.race }}</a></td><td>{{ race.distance }}</td></tr>
+      {%- capture hour -%}
+        {{ race.date | date: "%H" }}
+      {%- endcapture -%}
+      <tr><td><time datetime="{{ race.date | date: "%F" }}
+      {%- if hour != "00" -%}
+        {{ race.date | date: "T%T%z" }}
+      {%- endif -%}">{{ race.date | date: "%b %e, %Y" }}</time></td><td><a href="{%- include website.txt url = race.website -%}" target="_blank">{{ race.race }}</a></td><td>{{ race.distance }}</td></tr>
     {% endfor %}
     </tbody>
   </table>
