@@ -34,3 +34,44 @@ layout: default
 </div>
 
 </div>
+
+<script>
+window.onload = init;
+
+function init() {
+  getRaces();
+}
+
+function getRaces() {
+  const url = "{{ site.url }}{{ site.baseurl }}/api/{{ site.year }}/races.json";
+  const request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.onload = function() {
+    if (request.status == 200) {
+      updateUpcomingRaces(JSON.parse(request.responseText));
+    }
+  };
+  request.send(null);
+}
+
+function updateUpcomingRaces(raceData) {
+  $("#upcomingraces").empty();
+  const date = new Date();
+  console.log(date);
+  let j = 0;
+  for (let i = 0; i < raceData.races.length; i++) {
+    if (j < 4 && date < new Date(raceData.races[i].date)) {
+      const raceName = document.createElement("a");
+      raceName.innerHTML = raceData.races[i].race;
+      raceName.setAttribute("href", raceData.races[i].website);
+      raceName.setAttribute("target", "_blank");
+      const race = document.createElement("li");
+      race.appendChild(raceName);
+      race.append( " - " + new Date(raceData.races[i].date).toDateString());
+      $("#upcomingraces").append(race);
+      j++;
+    }
+  }
+  $("#upcomingraces").append("<li><a href=\"{{site.baseurl}}races/{{ site.year }}/\">More…</a></li>");
+}
+</script>
