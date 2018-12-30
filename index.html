@@ -57,7 +57,6 @@ function getRaces() {
 function updateUpcomingRaces(raceData) {
   $("#upcomingraces").empty();
   const date = new Date();
-  console.log(date);
   let j = 0;
   for (let i = 0; i < raceData.races.length; i++) {
     if (j < 4 && date < new Date(raceData.races[i].date)) {
