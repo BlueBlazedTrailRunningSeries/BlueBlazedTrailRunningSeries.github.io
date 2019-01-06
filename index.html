@@ -66,7 +66,7 @@ function updateUpcomingRaces(raceData) {
       raceName.setAttribute("target", "_blank");
       const race = document.createElement("li");
       race.appendChild(raceName);
-      race.append( " - " + new Date(raceData.races[i].date).toDateString());
+      race.insertAdjacentText("beforeend", " - " + new Date(raceData.races[i].date).toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' }));
       $("#upcomingraces").append(race);
       j++;
     }
