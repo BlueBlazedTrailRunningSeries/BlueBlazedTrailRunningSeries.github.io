@@ -1,0 +1,51 @@
+---
+layout: default
+---
+
+<div class="container">
+
+<div class="table-responsive">
+  <table class="table table-sm table-striped table-hover">
+    <caption style="caption-side: top;">Men</caption>
+    {% for participant in site.data.results.2019.men -%}
+      {%- if forloop.first == true -%}
+      <thead class="thead-light">
+        <tr>
+          {%- for column in participant -%}
+          <th>{{ column[0] }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+      {% endif -%}
+      <tr>
+      {%- for column in participant -%}
+        <td>{{ column[1] }}</td>
+      {%- endfor -%}
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+<div class="table-responsive">
+  <table class="table table-sm table-striped table-hover">
+    <caption style="caption-side: top;">Women</caption>
+    {% for participant in site.data.results.2019.women -%}
+      {%- if forloop.first == true -%}
+      <thead class="thead-light">
+        <tr>
+          {%- for column in participant -%}
+          <th>{{ column[0] }}</th>
+          {%- endfor -%}
+        </tr>
+      </thead>
+      {% endif -%}
+      <tr>
+      {%- for column in participant -%}
+        <td>{{ column[1] }}</td>
+      {%- endfor -%}
+      </tr>
+    {% endfor %}
+  </table>
+</div>
+
+</div>
