@@ -59,14 +59,15 @@ function updateUpcomingRaces(raceData) {
   const date = new Date();
   let j = 0;
   for (let i = 0; i < raceData.races.length; i++) {
-    if (j < 4 && date < new Date(raceData.races[i].date)) {
+    const raceDate = new Date(raceData.races[i].date.slice(0, 10));
+    if (j < 4 && date < raceDate) {
       const raceName = document.createElement("a");
       raceName.innerHTML = raceData.races[i].race;
       raceName.setAttribute("href", raceData.races[i].website);
       raceName.setAttribute("target", "_blank");
       const race = document.createElement("li");
       race.appendChild(raceName);
-      race.insertAdjacentText("beforeend", " - " + new Date(raceData.races[i].date).toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' }));
+      race.insertAdjacentText("beforeend", " - " + raceDate.toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' }));
       $("#upcomingraces").append(race);
       j++;
     }
