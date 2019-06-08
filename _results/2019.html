@@ -4,7 +4,14 @@ layout: default
 
 <div class="container">
 
-<div class="table-responsive">
+<div>
+  <ul class="pl-0" style="list-style: none;">
+    <li><a class="display-4" href="#men">Men</a></li>
+    <li><a class="display-4" href="#women">Women</a></li>
+  </ul>
+</div>
+
+<div class="table-responsive" id="men">
   <table class="table table-sm table-striped table-hover">
     <caption style="caption-side: top;">Men</caption>
     {% for participant in site.data.results.2019.men -%}
@@ -26,7 +33,7 @@ layout: default
   </table>
 </div>
 
-<div class="table-responsive">
+<div class="table-responsive" id="women">
   <table class="table table-sm table-striped table-hover">
     <caption style="caption-side: top;">Women</caption>
     {% for participant in site.data.results.2019.women -%}
