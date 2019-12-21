@@ -18,6 +18,7 @@ layout: default
           {%- if forloop.first == true -%}
           <thead class="thead-light">
             <tr>
+              <th></th>
               {%- for column in participant -%}
               <th>{{ column[0] }}</th>
               {%- endfor -%}
@@ -25,6 +26,7 @@ layout: default
           </thead>
           {% endif -%}
           <tr>
+            <td>{{ forloop.index }}</td>
           {%- for column in participant -%}
             <td>{{ column[1] }}</td>
           {%- endfor -%}
@@ -41,6 +43,7 @@ layout: default
           {%- if forloop.first == true -%}
           <thead class="thead-light">
             <tr>
+              <th></th>
               {%- for column in participant -%}
               <th>{{ column[0] }}</th>
               {%- endfor -%}
@@ -48,6 +51,7 @@ layout: default
           </thead>
           {% endif -%}
           <tr>
+            <td>{{ forloop.index }}</td>
           {%- for column in participant -%}
             <td>{{ column[1] }}</td>
           {%- endfor -%}
