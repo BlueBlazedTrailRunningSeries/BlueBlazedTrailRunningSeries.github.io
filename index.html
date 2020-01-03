@@ -29,11 +29,50 @@ layout: default
   </div>
   <div class="col-12 col-lg-4 order-4">
     <h2 class="h3">Upcoming Races</h2>
-      <ul class="pl-2" style="list-style: none;">
-        <li>Thanks for joining us in 2019, we look forward to seeing you next year!</li>
-        <li><a href="/results/2019.html">2019 series results</a></li>
-      </ul>
+{% include upcomingraceslist.html %}
   </div>
 </div>
 
 </div>
+
+<script>
+window.onload = init;
+
+function init() {
+  getRaces();
+}
+
+function getRaces() {
+  const url = "{{ site.url }}{{ site.baseurl }}/api/{{ site.year }}/races.json";
+  const request = new XMLHttpRequest();
+  request.open("GET", url);
+  request.onload = function() {
+    if (request.status == 200) {
+      updateUpcomingRaces(JSON.parse(request.responseText));
+    }
+  };
+  request.send(null);
+}
+
+function updateUpcomingRaces(raceData) {
+  $("#upcomingraces").empty();
+  let date = new Date();
+  date.setDate(date.getDate() - 1);
+  let j = 0;
+  for (let i = 0; i < raceData.races.length; i++) {
+    const raceDate = new Date(raceData.races[i].date.slice(0, 10));
+    if (j < 4 && date < raceDate) {
+      const raceName = document.createElement("a");
+      raceName.innerHTML = raceData.races[i].race;
+      raceName.setAttribute("href", raceData.races[i].website);
+      raceName.setAttribute("target", "_blank");
+      const race = document.createElement("li");
+      race.appendChild(raceName);
+      race.insertAdjacentText("beforeend", " - " + raceDate.toLocaleDateString("en-US", { weekday: 'long', month: 'long', day: 'numeric', timeZone: 'UTC' }));
+      $("#upcomingraces").append(race);
+      j++;
+    }
+  }
+  $("#upcomingraces").append("<li><a href=\"{{site.baseurl}}races/{{ site.year }}/\">More…</a></li>");
+}
+</script>
