@@ -19,8 +19,9 @@
   {%- endif -%}
   {%- endfor -%}
 
+  {% assign resultsyearssorted = site.results | map: 'resultsyear' | sort | reverse  %}
   <li class="nav-item">
-    <a class="nav-link{% if page.url contains "/results" %} active{% endif %}" href="{{ site.baseurl }}{% link _results/2019.html %}">Results</a>
+    <a class="nav-link{% if page.url contains "/results" %} active{% endif %}" href="{{ site.baseurl }}/results/{{resultsyearssorted[0]}}/">Results</a>
   </li>
 
   {%- for active_page in enabled_pages_array -%}
