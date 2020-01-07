@@ -1,0 +1,15 @@
+---
+title: Results by Year
+layout: default
+permalink: /results/index.html
+---
+
+<div class="container">
+  <h1>{{ page.title }}</h1>
+
+{%- assign sorted_results = site.results | sort:"value" | reverse -%}
+{% for year in sorted_results %}
+  <p class="h3"><a href="{{ site.baseurl }}{{ year.url }}">{{ year.title }}</a></p>
+{%- endfor %}
+        
+</div>
