@@ -23,6 +23,7 @@ exclude:
   - vendor/cache/
   - vendor/gems/
   - vendor/ruby/
+  - docs/
 plugins:
   - jekyll-sitemap
 collections:
