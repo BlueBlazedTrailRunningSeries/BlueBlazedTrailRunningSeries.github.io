@@ -20,4 +20,4 @@ After the files are copied, return to GitHub Desktop. It will show that there ar
 
 Finally, click the 'Push origin' button in the toolbar at the top of the application, which will push those changes to the BlueBlazedTrailRunningSeries website. The project will compile in the cloud, and within a few minutes the changes will be live.
 
-![A screenshot of the GitHub Desktop application with the mouse cursor focused on the Push origin button](assets/update_results/update-results.png)
+![A screenshot of the GitHub Desktop application with the mouse cursor focused on the Push origin button](assets/update_results/push-changes.png)
