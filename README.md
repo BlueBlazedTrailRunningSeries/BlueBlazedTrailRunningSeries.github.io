@@ -7,4 +7,4 @@ The majority of the site is created using HTML and Markdown snippets which Jekyl
 Common site administrative functions are as follows:
 
 [Updating race results](docs/UPDATE_RESULTS.md)
-
+[Starting a new year of events (ie, setting up for the next year of 2023)](docs/START_A_NEW_YEAR_OF_EVENTS.md)
