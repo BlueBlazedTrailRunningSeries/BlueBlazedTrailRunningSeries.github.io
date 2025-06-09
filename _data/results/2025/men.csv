@@ -1,10 +1,10 @@
 First,Last,Traprock,Soapstone,Goodwin,NipSouth,Solstice,Peoples,Macedonia,T2ACure,Tunxis,NipMAr,Mohawk,Bimblers,Total
-Ryan,Miller,100,81.9,100.00,,,,,,,,,,281.90
+Ryan,Miller,100.00,81.90,100.00,,,,,,,,,,281.90
 Ted,Cowles,61.11,54.04,64.71,,,,,,,,,,179.86
 Jeremy,Waycott,59.47,51.84,66.33,,,,,,,,,,177.64
-Kevin,St Pierre,54.11,50.8,58.31,,,,,,,,,,163.22
+Kevin,St Pierre,54.11,50.80,58.31,,,,,,,,,,163.22
 Nicholas,Godau,75.61,*,82.99,,,,,,,,,,158.60
-Ben,Lundin,81.25,71.5,*,,,,,,,,,,152.75
+Ben,Lundin,81.25,71.50,*,,,,,,,,,,152.75
 Matthew,Barnett,*,67.06,82.24,,,,,,,,,,149.30
 Ricky,Bentley,76.65,71.84,*,,,,,,,,,,148.49
 Mark,McGuire,*,60.06,76.14,,,,,,,,,,136.20
@@ -13,7 +13,7 @@ Thomas,Zalonski,55.01,*,67.86,,,,,,,,,,122.87
 Brian,Beegan,*,57.15,65.53,,,,,,,,,,122.68
 Franklyn,Gandiaga,59.19,52.55,*,,,,,,,,,,111.74
 Ben,Lapointe,48.14,*,62.65,,,,,,,,,,110.79
-William,Sanders,*,100,*,,,,,,,,,,100.00
+William,Sanders,*,100.00,*,,,,,,,,,,100.00
 Stephen,Kerr,*,98.97,*,,,,,,,,,,98.97
 Dylan,Shusta,*,*,98.55,,,,,,,,,,98.55
 Tom,Bennett,96.09,*,*,,,,,,,,,,96.09
@@ -33,7 +33,7 @@ Kris,Borton,*,84.06,*,,,,,,,,,,84.06
 Aris,Ristau,83.99,*,*,,,,,,,,,,83.99
 Owen,Schenck,*,*,83.72,,,,,,,,,,83.72
 Andrew,Nigro,82.92,*,*,,,,,,,,,,82.92
-Ben,Ristau,82.8,*,*,,,,,,,,,,82.80
+Ben,Ristau,82.80,*,*,,,,,,,,,,82.80
 David,Catarius,82.63,*,*,,,,,,,,,,82.63
 Tim,Goric,*,80.23,*,,,,,,,,,,80.23
 Ambrose,Philipek,79.03,*,*,,,,,,,,,,79.03
@@ -44,7 +44,7 @@ Jeff,Sullivan,76.33,*,*,,,,,,,,,,76.33
 Aris,Ristau,*,76.02,*,,,,,,,,,,76.02
 Timothy,Seidl,*,76.01,*,,,,,,,,,,76.01
 Zachary,Hoblin,*,*,75.99,,,,,,,,,,75.99
-Filip,Nikolic,75.9,*,*,,,,,,,,,,75.90
+Filip,Nikolic,75.90,*,*,,,,,,,,,,75.90
 Tony,Bonanno,*,*,75.80,,,,,,,,,,75.80
 Joseph,Benoit,75.17,*,*,,,,,,,,,,75.17
 Todd,Bennett,*,75.12,*,,,,,,,,,,75.12
@@ -59,7 +59,7 @@ Eric,Young,73.79,*,*,,,,,,,,,,73.79
 Neil,McCarthy,73.57,*,*,,,,,,,,,,73.57
 Johnny,Bontemps,73.54,*,*,,,,,,,,,,73.54
 Ryan,Drake,73.48,*,*,,,,,,,,,,73.48
-Michael,Pelland,72.1,*,*,,,,,,,,,,72.10
+Michael,Pelland,72.10,*,*,,,,,,,,,,72.10
 Dave,Champoux,*,72.05,*,,,,,,,,,,72.05
 Joe,Manetta,*,*,71.95,,,,,,,,,,71.95
 Patrick,McGuire,*,*,71.56,,,,,,,,,,71.56
@@ -74,7 +74,7 @@ Jameson,Liro,70.28,*,*,,,,,,,,,,70.28
 Derik,Brouillard,*,69.66,*,,,,,,,,,,69.66
 Nathaniel,Arden,69.34,*,*,,,,,,,,,,69.34
 Fred,Bevans,*,*,69.25,,,,,,,,,,69.25
-Andrew,Horn,69,*,*,,,,,,,,,,69.00
+Andrew,Horn,69.00,*,*,,,,,,,,,,69.00
 John,Minervino,*,68.75,*,,,,,,,,,,68.75
 David,Finegan,*,*,68.27,,,,,,,,,,68.27
 David,Backeberg,68.08,*,*,,,,,,,,,,68.08
@@ -101,7 +101,7 @@ Scott,Vezina,*,*,64.36,,,,,,,,,,64.36
 Heath,Tiberio,*,*,64.33,,,,,,,,,,64.33
 Michael,Beaton,*,64.02,*,,,,,,,,,,64.02
 Brian,Tiedt,63.65,*,*,,,,,,,,,,63.65
-Jonathan,Tarbox,63.4,*,*,,,,,,,,,,63.40
+Jonathan,Tarbox,63.40,*,*,,,,,,,,,,63.40
 Sean,McCarthy,63.26,*,*,,,,,,,,,,63.26
 Michael,Miller,63.15,*,*,,,,,,,,,,63.15
 Zack,Gladding,63.13,*,*,,,,,,,,,,63.13
@@ -113,14 +113,14 @@ Richard,Schenck,*,*,60.69,,,,,,,,,,60.69
 John,Wawrzynowski,60.67,*,*,,,,,,,,,,60.67
 Derrick,Sasaki,*,*,60.21,,,,,,,,,,60.21
 Milton,Levin,*,*,59.71,,,,,,,,,,59.71
-Ross,Petrone,59.7,*,*,,,,,,,,,,59.70
+Ross,Petrone,59.70,*,*,,,,,,,,,,59.70
 Eddie,Jacovino,59.63,*,*,,,,,,,,,,59.63
 Mike,Grudic,59.62,*,*,,,,,,,,,,59.62
 Braden,Fleming,*,*,59.27,,,,,,,,,,59.27
 John,Ricardi,*,58.99,*,,,,,,,,,,58.99
 Simon,Bastien,58.81,*,*,,,,,,,,,,58.81
-John,Kreisher,58.6,*,*,,,,,,,,,,58.60
-Tony,Zilu,*,58.6,*,,,,,,,,,,58.60
+John,Kreisher,58.60,*,*,,,,,,,,,,58.60
+Tony,Zilu,*,58.60,*,,,,,,,,,,58.60
 David,Howland,58.53,*,*,,,,,,,,,,58.53
 John,Santillo,*,*,58.15,,,,,,,,,,58.15
 John,Haksteen,57.64,*,*,,,,,,,,,,57.64
@@ -157,10 +157,10 @@ Steven,Fernandes,*,48.46,*,,,,,,,,,,48.46
 Clint,Palermo,*,48.46,*,,,,,,,,,,48.46
 Nolan,Beegan,*,*,48.19,,,,,,,,,,48.19
 Andy,Puhlick,*,*,47.98,,,,,,,,,,47.98
-Steven,Rice,47.6,*,*,,,,,,,,,,47.60
+Steven,Rice,47.60,*,*,,,,,,,,,,47.60
 Peter,Ouellette,47.17,*,*,,,,,,,,,,47.17
 Zachary,Capron,*,*,46.89,,,,,,,,,,46.89
-Brenden,Pontz,45.8,*,*,,,,,,,,,,45.80
+Brenden,Pontz,45.80,*,*,,,,,,,,,,45.80
 Adam,Golovizki,45.78,*,*,,,,,,,,,,45.78
 Paul,Ghelfi,*,45.28,*,,,,,,,,,,45.28
 Bill,Begg,45.18,*,*,,,,,,,,,,45.18
